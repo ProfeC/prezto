@@ -11,3 +11,23 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+export DEFAULT_USER="Lee"
+export TERM="xterm-256color"
+export SUBLIME=subl
+export EDITOR="$SUBLIME --wait"
+export VISUAL=$EDITOR
+export LSCOLORS="exfxcxdxbxegedabagacad"
+export PATH="/usr/local/mysql/bin:/usr/local/bin:/usr/local/sbin:/Users/Lee/bin:/Users/Lee/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11R6/bin:/Users/Lee/Dropbox/AWS:/Users/Lee/Dropbox/AWS/api-tools-latest/bin:/Users/Lee/Dropbox/AWS/ami-tools-latest/bin:/Users/Lee/Dropbox/AWS/rds-tools-latest/bin"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
+
+# iTerm2 Shell Integration
+source ~/.iterm2_shell_integration.`basename $SHELL`
+test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
